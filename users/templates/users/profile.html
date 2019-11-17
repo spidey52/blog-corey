@@ -11,12 +11,12 @@
     </div>
 </div>
 <!-- form -->
-<form action="" method="post" enctype="multipart/form-data">
+<form method="post" enctype="multipart/form-data">
     {% csrf_token %}
     <fieldset class="form-group">
         <legend class="border-bottom mb-4"> Profile Info </legend>
         {{ updateForm|crispy }} 
-        {{ profileForm }}
+        {{ profileForm}}
     </fieldset>
     <div class="form-group">
         <button class="btn btn-outline-info" type="submit">Update</button>
